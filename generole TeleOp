@@ -46,11 +46,11 @@ import java.util.Date;
     public void loop() {
     
         telemetry.addData("Status", "Running: " + runtime.toString());
-        leftMotor.setPower(-gamepad1.left_stick_x); //objects connecting to hardwaremap
+        leftMotor.setPower(-gamepad1.left_stick_y); //objects connecting to hardwaremap
         rightMotor.setPower(-gamepad1.right_stick_y); //objects connecting to hardwaremap
-        IntakeMotor.setPower(-gamepad1.right_trigger); //objects connecting to hardwaremap
-        lsMotor.setPower(-gamepad1.left_trigger); //objects connecting to hardwaremap
-        rsMotor.setPower(-gamepad1.left_trigger); //objects connecting to hardwaremap
+        IntakeMotor.setPower(-gamepad2.left_stick_x); //objects connecting to hardwaremap
+        lsMotor.setPower(-gamepad2.right_stick_y); //objects connecting to hardwaremap
+        rsMotor.setPower(-gamepad2.right_stick_x); //objects connecting to hardwaremap
         
     }
 
