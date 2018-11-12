@@ -1,0 +1,12 @@
+If(gamepad1.left_Stick_x==-1){
+servoTurn1.setPosition(0);
+servoTurn2.setPosition(0);
+}
+If(gamepad1.left_Stick_x==0){
+servoTurn1.setPosition(.5);
+servoTurn2.setPosition(.5);
+}
+If(gamepad1.left_Stick_x==1){
+servoTurn1.setPosition(1);
+servoTurn2.setPosition(1);
+}
